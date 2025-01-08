@@ -209,7 +209,7 @@
          &kp GRAVE      &kp SQT         &kp COMMA    &kp DOT        &kp P          &kp Y            &kp F          &kp G            &kp C            &kp R         &kp L        &kp SLASH
          &mt LCTRL TAB  &kp A           &kp O        &kp E          &kp U          &kp I            &kp D          &kp H            &kp T            &kp N         &kp S        &mt RCTRL MINUS
          &kt LSHFT      &bhl LWIN SEMI  &bhl LALT Q  &bhl LCTRL J   &bhl LSHFT K   &kp X            &kp B          &bhr RSHFT M     &bhr RCTRL W     &bhr RALT V   &bhr RWIN Z  &kp RSHFT
-                                                     &sk LSHFT      &lt MOUS BSPC  &lt NAVI BSPC    &lt SYMB BSPC  &lt NUMB SPACE   &lt FUNC DEL
+                                                     &lt MOUS LALT  &lt NAVI BSPC  &sk LSHFT        &lt SYMB BSPC  &lt NUMB SPACE   &lt FUNC DEL
             >;
         };
 
@@ -218,7 +218,7 @@
          &kp GRAVE      &kp Q        &kp W        &kp E          &kp R          &kp T            &kp Y          &kp U           &kp I             &kp O          &kp P           &kp LBKT
          &mt LCTRL TAB  &kp A        &kp S        &kp D          &kp F          &kp G            &kp H          &kp J           &kp K             &kp L          &kp SEMI        &mt RCTRL SQT
          &kt LSHFT      &bhl LWIN Z  &bhl LALT X  &bhl LCTRL C   &bhl LSHFT V   &kp B            &kp N          &bhr RSHFT M    &bhr RCTRL COMMA  &bhr RALT DOT  &bhr RWIN FSLH  &kp RSHFT
-                                                  &sk LSHFT      &lt MOUS BSPC  &lt NAVI BSPC    &lt SYMB BSPC  &lt NUMB SPACE  &lt FUNC DEL
+                                                  &lt MOUS LALT  &lt NAVI BSPC  &sk LSHFT        &lt SYMB BSPC  &lt NUMB SPACE  &lt FUNC DEL
             >;
         };
 
@@ -251,20 +251,21 @@
             >;
         };
 
+[_NUM] = LAYOUT_split_3x6_3(
         NUMB {
             bindings = <
-        &trans         &kp LS(N9)     &kp N7      &kp N8     &kp N9  &kp LS(N0)             &kp MINUS  &kp RS(LBKT)  &kp RS(RBKT)  &kp RS(SEMI)  &kp RS(N6)   &kp SPACE
-        &mt LCTRL TAB  &kp SEMI       &kp N4      &kp N5     &kp N6  &kp EQUAL              &kp PLUS   &kp LBKT      &kp RBKT      &kp J         &kp K        &kp ENTER
-        &trans         &kp UNDER      &kp N1      &kp N2     &kp N3  &kp SLASH              &kp RS(G)  &kp RSHFT     &kp RCTRL     &kp RALT      &kp RWIN     &kp RS(BACKSLASH)
-                                                  &kp COMMA  &kp N0  &kp DOT                &trans     &trans        &trans
+        &trans         &kp LS(N8)  &kp N7      &kp N8     &kp N9  &kp EQUAL              &kp MINUS  &kp RS(LBKT)  &kp RS(RBKT)  &kp RS(SEMI)  &kp RS(N6)   &kp SPACE
+        &mt LCTRL TAB  &kp SEMI    &kp N4      &kp N5     &kp N6  &kp LS(EQUAL)          &kp PLUS   &kp LBKT      &kp RBKT      &kp J         &kp K        &kp ENTER
+        &trans         &kp SLASH   &kp N1      &kp N2     &kp N3  &kp MINUS              &kp RS(G)  &kp RSHFT     &kp RCTRL     &kp RALT      &kp RWIN     &kp RS(BACKSLASH)
+                                               &kp COMMA  &kp N0  &kp DOT                &trans     &trans        &trans
             >;
         };
 
         FUNC {
             bindings = <
-        &trans         &kp F12   &kp F7   &kp F8  &kp F9  &kp PSCRN            &none      &to DVORAK  &none      &to QWERTY  &none     &none
-        &mt LCTRL TAB  &kp F11   &kp F4   &kp F5  &kp F6  &kp SLCK             &none      &toeng      &none      &torus      &none     &none
-        &trans         &kp F10   &kp F1   &kp F2  &kp F3  &kp PAUSE_BREAK      &kp ENTER  &kp RSHFT   &kp RCTRL  &kp RALT    &kp RWIN  &trans
+        &trans         &kp F12   &kp F7   &kp F8  &kp F9  &kp PSCRN            &none      &to DVORAK  &to QWERTY  &kp ENTER  &none     &none
+        &mt LCTRL TAB  &kp F11   &kp F4   &kp F5  &kp F6  &kp SLCK             &none      &toeng      &torus      &none      &none     &none
+        &trans         &kp F10   &kp F1   &kp F2  &kp F3  &kp PAUSE_BREAK      &kp ENTER  &kp RSHFT   &kp RCTRL   &kp RALT   &kp RWIN  &trans
                                           &trans  &trans  &trans               &trans     &kp ENTER   &kp SPACE
             >;
         };
