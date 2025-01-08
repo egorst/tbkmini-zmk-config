@@ -251,7 +251,6 @@
             >;
         };
 
-[_NUM] = LAYOUT_split_3x6_3(
         NUMB {
             bindings = <
         &trans         &kp LS(N8)  &kp N7      &kp N8     &kp N9  &kp EQUAL              &kp MINUS  &kp RS(LBKT)  &kp RS(RBKT)  &kp RS(SEMI)  &kp RS(N6)   &kp SPACE
