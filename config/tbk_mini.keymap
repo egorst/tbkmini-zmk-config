@@ -253,10 +253,10 @@
 
         NUMB {
             bindings = <
-        &trans         &kp LS(N8)  &kp N7      &kp N8     &kp N9  &kp EQUAL              &kp MINUS  &kp RS(LBKT)  &kp RS(RBKT)  &kp RS(SEMI)  &kp RS(N6)   &kp SPACE
-        &mt LCTRL TAB  &kp SEMI    &kp N4      &kp N5     &kp N6  &kp LS(EQUAL)          &kp PLUS   &kp LBKT      &kp RBKT      &kp J         &kp K        &kp ENTER
-        &trans         &kp SLASH   &kp N1      &kp N2     &kp N3  &kp MINUS              &kp RS(G)  &kp RSHFT     &kp RCTRL     &kp RALT      &kp RWIN     &kp RS(BACKSLASH)
-                                               &kp COMMA  &kp N0  &kp DOT                &trans     &trans        &trans
+        &trans         &kp LS(N8)  &kp N7      &kp N8     &kp N9  &kp EQUAL              &kp RS(N0)    &kp RS(LBKT)  &kp RS(RBKT)  &kp RS(SEMI)  &kp RS(N6)   &kp SPACE
+        &mt LCTRL TAB  &kp SEMI    &kp N4      &kp N5     &kp N6  &kp LS(EQUAL)          &kp RS(N9)    &kp LBKT      &kp RBKT      &kp J         &kp K        &kp ENTER
+        &trans         &kp SLASH   &kp N1      &kp N2     &kp N3  &kp MINUS              &kp RS(SQT)  &kp RSHFT     &kp RCTRL     &kp RALT      &kp RWIN     &kp RS(BACKSLASH)
+                                               &kp COMMA  &kp N0  &kp DOT                &trans       &trans        &trans
             >;
         };
 
