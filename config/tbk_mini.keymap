@@ -48,7 +48,7 @@
             bindings = <&macro_tap>, <&kp COLON &kp EQUAL &kp SPACE>;
         };
         up_dir: assign {
-            label = "assign";
+            label = "up_dir";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp DOT &kp DOT &kp SLASH>;
