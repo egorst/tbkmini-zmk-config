@@ -226,16 +226,16 @@
 // for russian layout
 // S(KC_4) -> ;    S(KC_2) -> "    KC_SLSH -> .   S(KC_SLSH) -> ,  S(KC_7) -> ?    S(KC_1) -> !   S(KC_6) -> :
             bindings = <
-        &trans         &kp LS(N2)  &kp LS(SLASH)  &kp SLASH  &kp LS(N7)  &kp LS(N1)              &none     &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER  &none    &none
-        &mt LCTRL TAB  &none       &torus         &none      &toeng      &none                   &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT  &none    &none
-        &trans         &kp LWIN    &kp LALT       &kp LCTRL  &kp LSHFT   &none                   &kp INS   &kp PG_DN     &kp PG_UP     &kp HOME   &kp END  &trans
-                                                  &trans     &trans      &trans                  &kp BSPC  &kp SPACE     &kp DEL
+        &trans         &kp LS(N2)  &kp LS(SLASH)  &kp SLASH  &kp LS(N7)  &kp LS(N1)              &kp RS(SEMI)  &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER  &none    &kp ESC
+        &mt LCTRL TAB  &kp DOT     &kp SLASH      &torus     &toeng      &none                   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &none    &none
+        &trans         &kp LWIN    &kp LALT       &kp LCTRL  &kp LSHFT   &none                   &kp INS       &kp PG_DN     &kp PG_UP     &kp HOME   &kp END  &trans
+                                                  &trans     &trans      &trans                  &kp BSPC      &kp SPACE     &kp DEL
             >;
         };
 
         MOUS {
             bindings = <
-        &trans         &kp F12   &kp F7   &kp F8  &kp F9  &kp PSCRN                              &none      U_WH_D      U_MS_U     U_WH_U      &none     &none
+        &trans         &kp F12   &kp F7   &kp F8  &kp F9  &kp PSCRN                              &none      U_WH_D      U_MS_U     U_WH_U      &none     &kp ESC
         &mt LCTRL TAB  &kp F11   &kp F4   &kp F5  &kp F6  &kp SLCK                               &none      U_MS_L      U_MS_D     U_MS_R      &none     &none
         &trans         &kp F10   &kp F1   &kp F2  &kp F3  &kp PAUSE_BREAK                        &kp ENTER  &kp RSHFT   &kp RCTRL  &kp RALT    &kp RWIN  &trans
                                           &trans  &trans  &trans                                 &trans     &mkp LCLK   &mkp RCLK
@@ -244,10 +244,10 @@
 
         SYMB {
             bindings = <
-        &trans         &kp LS(N9)     &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)             &kp MINUS  &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER      &none     &none
+        &trans         &kp LS(N9)     &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)             &kp MINUS  &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER      &none     &kp ESC
         &mt LCTRL TAB  &td0           &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp EQUAL              &kp PLUS   &kp LBKT      &kp RBKT      &kp BACKSLASH  &none     &trans
         &trans         &kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp SLASH              &kp PIPE   &kp RSHFT     &kp RCTRL     &kp RALT       &kp RWIN  &trans
-                                                  &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)          &trans     &kp SPACE     &kp BSPC
+                                                  &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)          &trans     &trans        &trans
             >;
         };
 
