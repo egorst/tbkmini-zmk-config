@@ -233,8 +233,8 @@
 // S(KC_4) -> ;    S(KC_2) -> "    KC_SLSH -> .   S(KC_SLSH) -> ,  S(KC_7) -> ?    S(KC_1) -> !   S(KC_6) -> :
             bindings = <
         &trans         &kp LS(N2)  &kp LS(SLASH)  &kp SLASH  &kp LS(N7)  &kp LS(N1)              &kp RS(SEMI)  &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER  &none        &kp ESC
-        &mt LCTRL TAB  &kp DOT     &kp SLASH      &torus     &toeng      &none                   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &kp RS(SQT)  &kp BSLH
-        &trans         &kp LWIN    &kp LALT       &kp LCTRL  &kp LSHFT   &none                   &kp INS       &kp PG_DN     &kp PG_UP     &kp HOME   &kp END      &trans
+        &mt LCTRL TAB  &kp DOT     &kp SLASH      &torus     &toeng      &kp LC(C)               &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &kp RS(SQT)  &kp BSLH
+        &trans         &kp LWIN    &kp LALT       &kp LCTRL  &kp LSHFT   &kp LC(V)               &kp INS       &kp PG_DN     &kp PG_UP     &kp HOME   &kp END      &trans
                                                   &trans     &trans      &trans                  &kp BSPC      &kp SPACE     &kp DEL
             >;
         };
@@ -248,30 +248,30 @@
             >;
         };
 
-//        SYMB {
-//          bindings = <
-//      &trans         &kp LS(N9)     &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)             &kp MINUS  &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER      &none     &kp ESC
-//      &mt LCTRL TAB  &td0           &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp EQUAL              &kp PLUS   &kp LBKT      &kp RBKT      &kp BSLH       &none     &trans
-//      &trans         &kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp SLASH              &kp PIPE   &kp RSHFT     &kp RCTRL     &kp RALT       &kp RWIN  &trans
-//                                                &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)          &trans     &trans        &trans
-//          >;
-//        };
-
         SYMB {
-            bindings = <
-        &trans         &kp SQT     &kp LS(DOT)  &kp LS(COMMA)  &kp LS(SQT)  &kp DOT              &kp RS(N7)     &kp RS(N5)    &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER      &kp ESC
-        &mt LCTRL TAB  &kp LS(N1)  &kp MINUS    &kp LS(EQUAL)  &kp EQUAL    &kp LS(N3)           &kp PIPE       &kp RS(SEMI)  &kp RS(N9)    &kp RS(N0)    &kp RS(SLASH)  &trans
-        &trans         &kp LS(N6)  &kp SLASH    &kp LS(N8)     &kp BSLH     &up_dir              &kp RS(GRAVE)  &kp RS(N4)    &kp LBKT      &kp RBKT      &kp RS(N2)     &trans
-                                                &kp BSPC       &kp SPACE    &kp LS(MINUS)        &trans         &trans        &trans
-            >;
+          bindings = <
+      &trans         &kp LS(N9)     &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)             &kp MINUS  &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER      &none     &kp ESC
+      &mt LCTRL TAB  &td0           &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp EQUAL              &kp PLUS   &kp LBKT      &kp RBKT      &kp BSLH       &none     &trans
+      &trans         &kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp SLASH              &kp PIPE   &kp RSHFT     &kp RCTRL     &kp RALT       &kp RWIN  &trans
+                                                &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)          &trans     &trans        &trans
+          >;
         };
+
+//        SYMB {
+//            bindings = <
+//        &trans         &kp SQT     &kp LS(DOT)  &kp LS(COMMA)  &kp LS(SQT)  &kp DOT              &kp RS(N7)     &kp RS(N5)    &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER      &kp ESC
+//        &mt LCTRL TAB  &kp LS(N1)  &kp MINUS    &kp LS(EQUAL)  &kp EQUAL    &kp LS(N3)           &kp PIPE       &kp RS(SEMI)  &kp RS(N9)    &kp RS(N0)    &kp RS(SLASH)  &trans
+//        &trans         &kp LS(N6)  &kp SLASH    &kp LS(N8)     &kp BSLH     &up_dir              &kp RS(GRAVE)  &kp RS(N4)    &kp LBKT      &kp RBKT      &kp RS(N2)     &trans
+//                                                &kp BSPC       &kp SPACE    &kp LS(MINUS)        &trans         &trans        &trans
+//            >;
+//        };
 
         NUMB {
             bindings = <
-        &trans         &kp LS(N8)  &kp N7      &kp N8     &kp N9  &kp EQUAL                      &kp RS(N0)   &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER     &kp RS(N6)   &kp SLASH
-        &mt LCTRL TAB  &kp SEMI    &kp N4      &kp N5     &kp N6  &kp LS(EQUAL)                  &kp RS(N9)   &kp LBKT      &kp RBKT      &kp RS(N5)    &kp RS(N4)   &kp PIPE
-        &trans         &kp SLASH   &kp N1      &kp N2     &kp N3  &kp MINUS                      &kp RS(SQT)  &kp RSHFT     &kp RCTRL     &kp RALT      &kp RWIN     &kp SPACE
-                                               &kp COMMA  &kp N0  &kp DOT                        &trans       &trans        &trans
+        &trans         &kp LS(N8)  &kp N7      &kp N8     &kp N9  &kp EQUAL                      &kp RS(N7)   &kp RS(LBKT)       &kp RS(RBKT)       &kp ENTER     &kp RS(N6)   &kp SLASH
+        &mt LCTRL TAB  &kp SLASH   &kp N4      &kp N5     &kp N6  &kp LS(EQUAL)                  &kp PIPE     &kp LBKT           &kp RBKT           &kp RS(N5)    &kp RS(N4)   &kp PIPE
+        &trans         &kp SEMI    &kp N1      &kp N2     &kp N3  &kp MINUS                      &kp RS(SQT)  &bhr RSHFT RS(N9)  &bhr RCTRL RS(N0)  &kp RALT      &kp RWIN     &kp SPACE
+                                               &kp COMMA  &kp N0  &kp DOT                        &trans       &trans             &trans
             >;
         };
 
