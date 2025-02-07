@@ -232,7 +232,7 @@
 // for russian layout
 // S(KC_4) -> ;    S(KC_2) -> "    KC_SLSH -> .   S(KC_SLSH) -> ,  S(KC_7) -> ?    S(KC_1) -> !   S(KC_6) -> :
             bindings = <
-        &trans         &kp LS(N2)        &kp LS(SLASH)   &kp SLASH          &kp LS(N7)         &kp LS(N1)              &kp RS(SEMI)  &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER  &RS(N6)     &kp ESC
+        &trans         &kp LS(N2)        &kp LS(SLASH)   &kp SLASH          &kp LS(N7)         &kp LS(N1)              &kp RS(SEMI)  &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER  &kp RS(N6)  &kp ESC
         &mt LCTRL TAB  &kp LS(N6)        &kp LS(MINUS)   &torus             &toeng             &kp LC(C)               &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &kp RS(N4)  &kp BSLH
         &trans         &bhl LWIN LS(N4)  &kp LALT        &bhl LCTRL LS(N0)  &bhl LSHFT LS(N0)  &kp LC(V)               &kp INS       &kp PG_DN     &kp PG_UP     &kp HOME   &kp END     &trans
                                                          &trans             &trans             &trans                  &kp BSPC      &kp SPACE     &kp DEL
