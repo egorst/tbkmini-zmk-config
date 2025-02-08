@@ -106,7 +106,7 @@
         };
         combo_enter {
             timeout-ms = <18>;
-            key-positions = <LT4 LT5>;
+            key-positions = <LT2 LT3>;
             require-prior-idle-ms = <150>;
             bindings = <&kp ENTER>;
         };
@@ -121,6 +121,18 @@
             key-positions = <LM3 LM4>;
             require-prior-idle-ms = <150>;
             bindings = <&assign>;
+        };
+        combo_del {
+            timeout-ms = <18>;
+            key-positions = <RT1 RT2>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp DEL>;
+        };
+        combo_bspc {
+            timeout-ms = <18>;
+            key-positions = <RT2 RT3>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp BSPC>;
         };
         combo_lpar {
             timeout-ms = <30>;
@@ -234,7 +246,7 @@
             bindings = <
         &trans         &kp LS(N2)        &kp LS(SLASH)   &kp SLASH          &kp LS(N7)         &kp LS(N1)              &kp RS(SEMI)  &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER  &kp RS(N6)  &kp ESC
         &mt LCTRL TAB  &kp LS(N6)        &kp LS(MINUS)   &torus             &toeng             &kp LC(C)               &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &kp RS(N4)  &kp BSLH
-        &trans         &bhl LWIN LS(N4)  &kp LALT        &bhl LCTRL LS(N0)  &bhl LSHFT LS(N0)  &kp LC(V)               &kp INS       &kp PG_DN     &kp PG_UP     &kp HOME   &kp END     &trans
+        &trans         &bhl LWIN LS(N4)  &kp LALT        &bhl LCTRL LS(N9)  &bhl LSHFT LS(N0)  &kp LC(V)               &kp INS       &kp PG_DN     &kp PG_UP     &kp HOME   &kp END     &trans
                                                          &trans             &trans             &trans                  &kp BSPC      &kp SPACE     &kp DEL
             >;
         };
