@@ -4,7 +4,7 @@
 #include "keypos_42keys_tbk.h"
 #include "mouse.dtsi"
 
-#define ENGRAM 0
+#define GRAPHI 0
 #define QWERTY 1
 #define NAVI 2
 #define MOUS 3
@@ -63,7 +63,7 @@
             label = "toeng";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&to ENGRAM>, <&kp LA(LSHFT)>;
+            bindings = <&macro_tap>, <&to GRAPHI>, <&kp LA(LSHFT)>;
         };
     };
 
@@ -222,12 +222,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        ENGRAM {
+        GRAPHI {
             bindings = <
-         &kp GRAVE      &kp B        &kp Y        &kp O          &kp U          &kp SQT               &kp SEMI        &kp L            &kp D            &kp W         &kp V        &kp Z
-         &mt LCTRL TAB  &bhl LWIN C  &bhl LALT I  &bhl LCTRL E   &bhl LSHFT A   &kp COMMA             &kp DOT         &bhr RSHFT H     &bhr RCTRL T     &bhr RALT S   &bhr RWIN N  &kp Q
-         &kt LSHFT      &kp G        &kp X        &kp J          &kp K          &kp MINUS             &kp FSLH        &kp R            &kp M            &kp F         &kp P        &kt RSHFT
-                                                  &lt MOUS LALT  &lt NAVI BSPC  &sk LSHFT             &lt SYMB SPACE  &lt NUMB SPACE   &lt FUNC DEL
+         &kp GRAVE       &kp B        &kp L        &kp D          &kp W          &kp Z                 &kp SQT         &kp F            &kp O            &kp U         &kp J        &kp SEMI
+         &mt LCTRL TAB   &bhl LWIN N  &bhl LALT R  &bhl LCTRL T   &bhl LSHFT S   &kp G                 &kp Y           &bhr RSHFT H     &bhr RCTRL A     &bhr RALT E   &bhr RWIN I  &kp COMMA
+         &mt LSHFT BSLH  &kp Q        &kp X        &kp M          &kp C          &kp V                 &kp K           &kp P            &kp DOT          &kp MINUS     &kp FSLH     &mt RSHFT ENTER
+                                                   &lt MOUS LALT  &lt NAVI BSPC  &sk LSHFT             &lt SYMB SPACE  &lt NUMB SPACE   &lt FUNC DEL
             >;
         };
 
@@ -289,7 +289,7 @@
 
         FUNC {
             bindings = <
-        &trans         &kp F12   &kp F7   &kp F8  &kp F9  &kp PSCRN                              &none      &to ENGRAM  &to QWERTY  &kp ENTER  &none     &none
+        &trans         &kp F12   &kp F7   &kp F8  &kp F9  &kp PSCRN                              &none      &to GRAPHI  &to QWERTY  &kp ENTER  &none     &none
         &mt LCTRL TAB  &kp F11   &kp F4   &kp F5  &kp F6  &kp SLCK                               &none      &toeng      &torus      &none      &none     &none
         &trans         &kp F10   &kp F1   &kp F2  &kp F3  &kp PAUSE_BREAK                        &kp ENTER  &kp RSHFT   &kp RCTRL   &kp RALT   &kp RWIN  &trans
                                           &trans  &trans  &trans                                 &trans     &trans      &trans
