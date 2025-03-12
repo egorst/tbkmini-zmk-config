@@ -224,19 +224,19 @@
 
         GRAPHI {
             bindings = <
-         &kp GRAVE       &kp B        &kp L        &kp D          &kp W          &kp Z                 &kp SQT         &kp F            &kp O            &kp U         &kp J        &kp SEMI
-         &mt LCTRL TAB   &bhl LWIN N  &bhl LALT R  &bhl LCTRL T   &bhl LSHFT S   &kp G                 &kp Y           &bhr RSHFT H     &bhr RCTRL A     &bhr RALT E   &bhr RWIN I  &kp COMMA
-         &mt LSHFT BSLH  &kp Q        &kp X        &kp M          &kp C          &kp V                 &kp K           &kp P            &kp DOT          &kp MINUS     &kp FSLH     &mt RSHFT ENTER
-                                                   &lt MOUS LALT  &lt NAVI BSPC  &sk LSHFT             &lt SYMB SPACE  &lt NUMB SPACE   &lt FUNC DEL
+         &kp GRAVE       &kp SQT      &kp COMMA    &kp DOT        &kp P          &kp Y                    &kp F           &kp G            &kp C            &kp R         &kp L        &kp SLASH
+         &mt LCTRL TAB   &bhl LWIN A  &bhl LALT O  &bhl LCTRL E   &bhl LSHFT U   &kp I                    &kp D           &bhr RSHFT H     &bhr RCTRL T     &bhr RALT N   &bhr RWIN S  &kp MINUS
+         &mt LSHFT BSLH  &kp SEMI     &kp Q        &kp J          &kp K          &kp X                    &kp B           &kp M            &kp W            &kp V         &kp Z        &mt RSHFT ENTER
+                                                   &lt MOUS LALT  &lt NAVI BSPC  &sk LSHFT                &lt SYMB SPACE  &lt NUMB SPACE   &lt FUNC DEL
             >;
         };
 
         QWERTY {
             bindings = <
-         &kp GRAVE      &kp Q        &kp W        &kp E          &kp R          &kp T                 &kp Y           &kp U           &kp I             &kp O          &kp P           &kp LBKT
-         &mt LCTRL TAB  &kp A        &kp S        &kp D          &kp F          &kp G                 &kp H           &kp J           &kp K             &kp L          &kp SEMI        &mt RCTRL SQT
-         &kt LSHFT      &bhl LWIN Z  &bhl LALT X  &bhl LCTRL C   &bhl LSHFT V   &kp B                 &kp N           &bhr RSHFT M    &bhr RCTRL COMMA  &bhr RALT DOT  &bhr RWIN FSLH  &kp RSHFT
-                                                  &lt MOUS LALT  &lt NAVI BSPC  &sk LSHFT             &lt SYMB SPACE  &lt NUMB SPACE  &lt FUNC DEL
+         &kp GRAVE      &kp Q        &kp W        &kp E          &kp R          &kp T                     &kp Y           &kp U           &kp I             &kp O          &kp P           &kp LBKT
+         &mt LCTRL TAB  &kp A        &kp S        &kp D          &kp F          &kp G                     &kp H           &kp J           &kp K             &kp L          &kp SEMI        &mt RCTRL SQT
+         &kt LSHFT      &bhl LWIN Z  &bhl LALT X  &bhl LCTRL C   &bhl LSHFT V   &kp B                     &kp N           &bhr RSHFT M    &bhr RCTRL COMMA  &bhr RALT DOT  &bhr RWIN FSLH  &kp RSHFT
+                                                  &lt MOUS LALT  &lt NAVI BSPC  &sk LSHFT                 &lt SYMB SPACE  &lt NUMB SPACE  &lt FUNC DEL
             >;
         };
 
@@ -301,7 +301,7 @@
        &bootloader  &kp A         &kp D         &kp J         &none         &none                &none         &none         &none         &none         &none          &bootloader
        &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0   &bt BT_CLR
        &sys_reset   &none         &none         &none         &none         &none                &none         &none         &none         &none         &none          &sys_reset
-                                                &trans        &none         &trans               &none         &none         &none
+                                                &trans        &none         &trans               &none         &none         &trans
             >;
         };
 
