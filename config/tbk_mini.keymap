@@ -4,7 +4,7 @@
 #include "keypos_42keys_tbk.h"
 #include "mouse.dtsi"
 
-#define GRAPHI 0
+#define DVORAK 0
 #define QWERTY 1
 #define NAVI 2
 #define MOUS 3
@@ -63,7 +63,7 @@
             label = "toeng";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&to GRAPHI>, <&kp LA(LSHFT)>;
+            bindings = <&macro_tap>, <&to DVORAK>, <&kp LA(LSHFT)>;
         };
     };
 
@@ -222,21 +222,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        GRAPHI {
+        DVORAK {
             bindings = <
-         &kp GRAVE       &kp SQT      &kp COMMA    &kp DOT        &kp P          &kp Y                    &kp F           &kp G            &kp C            &kp R         &kp L        &kp SLASH
-         &mt LCTRL TAB   &bhl LWIN A  &bhl LALT O  &bhl LCTRL E   &bhl LSHFT U   &kp I                    &kp D           &bhr RSHFT H     &bhr RCTRL T     &bhr RALT N   &bhr RWIN S  &kp MINUS
-         &mt LSHFT BSLH  &kp SEMI     &kp Q        &kp J          &kp K          &kp X                    &kp B           &kp M            &kp W            &kp V         &kp Z        &mt RSHFT ENTER
+         &kp GRAVE       &kp SQT      &kp COMMA    &kp DOT        &kp P          &kp Y                    &kp F           &kp G            &kp C          &kp R         &kp L        &kp SLASH
+         &mt LCTRL TAB   &bhl LWIN A  &bhl LALT O  &bhl LCTRL E   &bhl LSHFT U   &kp I                    &kp D           &bhr RSHFT H     &bhr RCTRL T   &bhr RALT N   &bhr RWIN S  &kp MINUS
+         &mt LSHFT BSLH  &kp SEMI     &kp Q        &kp J          &kp K          &kp X                    &kp B           &kp M            &kp W          &kp V         &kp Z        &mt RSHFT ENTER
                                                    &lt MOUS LALT  &lt NAVI BSPC  &sk LSHFT                &lt SYMB SPACE  &lt NUMB SPACE   &lt FUNC DEL
             >;
         };
 
         QWERTY {
             bindings = <
-         &kp GRAVE      &kp Q        &kp W        &kp E          &kp R          &kp T                     &kp Y           &kp U           &kp I             &kp O          &kp P           &kp LBKT
-         &mt LCTRL TAB  &kp A        &kp S        &kp D          &kp F          &kp G                     &kp H           &kp J           &kp K             &kp L          &kp SEMI        &mt RCTRL SQT
-         &kt LSHFT      &bhl LWIN Z  &bhl LALT X  &bhl LCTRL C   &bhl LSHFT V   &kp B                     &kp N           &bhr RSHFT M    &bhr RCTRL COMMA  &bhr RALT DOT  &bhr RWIN FSLH  &kp RSHFT
-                                                  &lt MOUS LALT  &lt NAVI BSPC  &sk LSHFT                 &lt SYMB SPACE  &lt NUMB SPACE  &lt FUNC DEL
+         &kp GRAVE      &kp Q        &kp W        &kp E           &kp R          &kp T                     &kp Y           &kp U           &kp I          &kp O         &kp P           &kp LBKT
+         &mt LCTRL TAB  &bhl LWIN A  &bhl LALT S  &bhl LCTRL D    &bhl LSHFT F   &kp G                     &kp H           &bhr RSHFT J    &bhr RCTRL K   &bhr RALT L   &bhr RWIN SEMI  &kp SQT
+         &kt LSHFT      &kp Z        &kp X        &kp C           &kp V          &kp B                     &kp N           &kp M           &kp COMMA      &kp DOT       &kp FSLH        &kp RSHFT
+                                                  &lt MOUS LALT   &lt NAVI BSPC  &sk LSHFT                 &lt SYMB SPACE  &lt NUMB SPACE  &lt FUNC DEL
             >;
         };
 
@@ -244,10 +244,10 @@
 // for russian layout
 // S(KC_4) -> ;    S(KC_2) -> "    KC_SLSH -> .   S(KC_SLSH) -> ,  S(KC_7) -> ?    S(KC_1) -> !   S(KC_6) -> :
             bindings = <
-        &trans         &kp LS(N2)        &kp LS(SLASH)   &kp SLASH          &kp LS(N7)         &kp LS(N1)              &kp RS(SEMI)  &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER  &kp RS(N6)  &kp ESC
-        &mt LCTRL TAB  &kp LS(N6)        &kp LS(MINUS)   &torus             &toeng             &kp LC(C)               &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &kp RS(N4)  &kp BSLH
-        &trans         &bhl LWIN LS(N4)  &kp LALT        &bhl LCTRL LS(N9)  &bhl LSHFT LS(N0)  &kp LC(V)               &kp INS       &kp PG_DN     &kp PG_UP     &kp HOME   &kp END     &trans
-                                                         &trans             &trans             &trans                  &kp BSPC      &kp SPACE     &kp DEL
+        &trans         &kp LS(N2)        &kp LS(SLASH)      &kp SLASH          &kp LS(N7)         &kp LS(N1)              &kp RS(SEMI)  &kp RS(LBKT)  &kp RS(RBKT)  &kp ENTER  &kp RS(N6)  &kp ESC
+        &mt LCTRL TAB  &bhl LWIN LS(N6)  &kp LS(MINUS)      &torus             &toeng             &kp LC(C)               &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &kp RS(N4)  &kp BSLH
+        &trans         &kp LS(N4)        &bhl LALT LS(N8)   &bhl LCTRL LS(N9)  &bhl LSHFT LS(N0)  &kp LC(V)               &kp INS       &kp PG_DN     &kp PG_UP     &kp HOME   &kp END     &trans
+                                                            &trans             &trans             &trans                  &kp BSPC      &kp SPACE     &kp DEL
             >;
         };
 
@@ -289,7 +289,7 @@
 
         FUNC {
             bindings = <
-        &trans         &kp F12   &kp F7   &kp F8  &kp F9  &kp PSCRN                              &none      &to GRAPHI  &to QWERTY  &kp ENTER  &none     &none
+        &trans         &kp F12   &kp F7   &kp F8  &kp F9  &kp PSCRN                              &none      &to DVORAK  &to QWERTY  &kp ENTER  &none     &none
         &mt LCTRL TAB  &kp F11   &kp F4   &kp F5  &kp F6  &kp SLCK                               &none      &toeng      &torus      &none      &none     &none
         &trans         &kp F10   &kp F1   &kp F2  &kp F3  &kp PAUSE_BREAK                        &kp ENTER  &kp RSHFT   &kp RCTRL   &kp RALT   &kp RWIN  &trans
                                           &trans  &trans  &trans                                 &trans     &trans      &trans
